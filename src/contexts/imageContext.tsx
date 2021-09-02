@@ -1,4 +1,4 @@
-import { createContext, FC, useState } from "react";
+import { createContext, FC, useEffect, useState } from "react";
 
 interface ContextValue {
     likedImages: number[];
@@ -21,6 +21,10 @@ const ImageProvider: FC = (props) => {
             setLikedImages([...likedImages, id]);
         }
     }
+    
+    useEffect(() => {
+        localStorage.setItem('likedImages', JSON.stringify(likedImages));
+    }, [likedImages])
 
     return (
         <ImageContext.Provider

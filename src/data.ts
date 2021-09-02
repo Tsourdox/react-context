@@ -7,13 +7,13 @@ import image6 from './images/6.jpg';
 import image7 from './images/7.jpg';
 import image8 from './images/8.jpg';
 
-export interface Image {
+export interface ImageData {
     id: number;
     url: string;
 }
 
 // The actual image data
-export const images: Image[] = [{
+export const images: ImageData[] = [{
     id: 1,
     url: image1
 }, {

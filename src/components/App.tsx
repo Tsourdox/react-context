@@ -1,12 +1,14 @@
-import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import ImageProvider from '../contexts/imageContext';
 import Layout from './Layout';
 
 function App() {
   return (
-    <ImageProvider>
-      <Layout/>
-    </ImageProvider>
+    <BrowserRouter>
+      <ImageProvider>
+        <Layout/>
+      </ImageProvider>
+    </BrowserRouter>
   );
 }
 

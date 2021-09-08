@@ -1,7 +1,7 @@
 import { CSSProperties, useContext } from 'react';
 import ImageCard from '../components/ImageCard';
 import { ImageContext } from '../contexts/imageContext';
-import { ImageData, images } from '../data';
+import { images } from '../data';
 
 const ProfilePage = () => {
     const { likedImages } = useContext(ImageContext);

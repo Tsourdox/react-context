@@ -16,7 +16,7 @@ const ImageCard: FC<Props> = ({ image }) => {
                 style={imageStyle}
                 key={image.id}
                 src={image.url}
-                alt=""
+                alt="missing"
                 onClick={() => toggleLikedImage(image.id)}
             />
             <img

@@ -22,7 +22,7 @@ const ImageCard: FC<Props> = ({ image }) => {
             <img
                 style={{
                     ...likeStyle,
-                    opacity: likedImages.includes(image.id) ? 1 : 0.2 
+                    opacity: likedImages.includes(image.id) ? 1 : 0.1 
                 }}
                 src={heart}
                 alt=""
